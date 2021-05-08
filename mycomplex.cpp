@@ -3,19 +3,16 @@
 #include "mycomplex.h"
 
 using namespace std;
-
     Complex :: Complex(double aRe, double aIm)
 {
     Re = aRe;
     Im = aIm;
 }
-
     Complex :: Complex(const Complex & aRval)
 {
     Re = aRval.Re;
     Im = aRval.Im;
 }
-
     Complex :: ~Complex()
 {
     Re = 0.0;
@@ -29,7 +26,7 @@ void
      Im = aIm;
 }
 
-Complex :: operator double()
+    Complex :: operator double()
 {
 
 return abs();
